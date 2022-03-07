@@ -1,15 +1,19 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {Button} from './components/Button';
-function App() {
+import TrackClick from './components/TrackClick';
+import Profile from './components/Profile';
+import NewsFeed from './components/NewsFeed';
+
+export const App: React.FC = () => {
   return (
-    <>
-       <h1>My App</h1>
-       <Button type='primary'>Test</Button>
-       <Button>Primary</Button>
-    </>
-  );
+    <React.Fragment>
+        <h1>Welcome my App</h1>
+       <Profile ownerName='Mahesh'/>
+       <NewsFeed/>
+    </React.Fragment>
+  )
+
 }
 
 export default App;
