@@ -1,15 +1,15 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {Button} from './components/Button';
-function App() {
-  return (
-    <>
-       <h1>My App</h1>
-       <Button type='primary'>Test</Button>
-       <Button>Primary</Button>
-    </>
-  );
+import Fruits from './components/Fruits';
+
+export const App: React.FC = () => {
+  return(
+    <React.Fragment>
+      <h1>Welcomer</h1>
+      <Fruits/>
+    </React.Fragment>
+  )
 }
 
 export default App;
